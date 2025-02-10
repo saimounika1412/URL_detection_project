@@ -1,0 +1,49 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#url-input {
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+    width: 300px;
+}
+
+button {
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.safe {
+    color: green;
+}
+
+.danger {
+    color: red;
+}
