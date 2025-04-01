@@ -1,4 +1,5 @@
 
+
 from flask import Flask, request, jsonify
 from flask_cors import CORS  # Import CORS
 
@@ -32,6 +33,9 @@ def is_blacklisted(url):
 # Check if the URL contains suspicious keywords
 def contains_suspicious_keywords(url):
     return any(keyword in url.lower() for keyword in SUSPICIOUS_KEYWORDS)
+@app.route('/', methods=['GET'])
+def home():
+    return jsonify({"message": "Flask is running!"})
 
 @app.route('/check-url', methods=['POST'])
 def check_url():
