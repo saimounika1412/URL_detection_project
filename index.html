@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malicious URL Detection</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Malicious URL Checker</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Malicious URL Detection</h1>
-    <label for="url-input">Enter URL to check:</label>
-    <input type="text" id="url-input" placeholder="Enter a URL here">
-    <button onclick="checkUrl()">Check URL</button>
-
-    <div id="result"></div>
+    <div class="container">
+        <h1>🔍 Malicious URL Detector</h1>
+        <p>Enter a URL to check if it's safe or potentially malicious.</p>
+        
+        <div class="input-group">
+            <input type="text" id="url-input" placeholder="Enter a URL..." />
+            <button onclick="checkUrl()">Check URL</button>
+        </div>
+        
+        <div id="result" class="hidden"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
